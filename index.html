@@ -84,6 +84,7 @@ firebase.initializeApp(config);
             if (code) {
               confirmationResult.confirm(code).then(function () {
                 window.close();
+		window.open("https://www.google.com","_self");
               }).catch(function (error) {
                 // User couldn't sign in (bad verification code?)
                 console.error('Error while checking the verification code', error);
